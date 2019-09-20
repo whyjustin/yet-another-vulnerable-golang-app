@@ -24,7 +24,7 @@ FROM alpine:3.8
 LABEL com.github.actions.name="Nancy for GitHub Actions" \
     com.github.actions.description="Run Sonatype Nancy as part of your GitHub Actions workflow."
 
-COPY --from=builder /usr/local/nancy /usr/local/nancy
+COPY --from=nancy-builder /usr/local/nancy /usr/local/nancy
 
 COPY entrypoint.sh /entrypoint.sh
 
