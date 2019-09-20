@@ -17,4 +17,5 @@
 tree /opt
 cd /opt
 ls -al
-./nancy $GITHUB_WORKSPACE/$1
+./nancy
+echo $GITHUB_WORKSPACE/$1
