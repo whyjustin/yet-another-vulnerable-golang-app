@@ -14,6 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+mkdir -p /opt && \
+    curl -L -o /opt/nancy \
+        https://github.com/sonatype-nexus-community/nancy/releases/download/v0.0.24/nancy-linux.amd64-v0.0.24 && \
+    chmod +x /opt/nancy
+
 tree /opt
 cd /opt
 ls -al
