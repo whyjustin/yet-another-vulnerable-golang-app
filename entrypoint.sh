@@ -14,10 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-tree /opt
-cd /opt
-ls -al
-chmod +x nancy
-which nancy
-./nancy
-echo $GITHUB_WORKSPACE/$1
+/usr/local/nancy $GITHUB_WORKSPACE/$1
