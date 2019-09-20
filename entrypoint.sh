@@ -14,4 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$HOME/nancy $GITHUB_WORKSPACE/$1
+/opt/nancy $GITHUB_WORKSPACE/$1

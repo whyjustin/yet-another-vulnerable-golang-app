@@ -17,9 +17,9 @@ FROM alpine
 LABEL com.github.actions.name="Nancy for GitHub Actions" \
     com.github.actions.description="Run Sonatype Nancy as part of your GitHub Actions workflow."
 
-RUN apk add curl && \
-    mkdir -p /github/home && \
-    curl -L -o /github/home/nancy \
+RUN apk add --no-cache curl && \
+    mkdir -p /opt && \
+    curl -L -o /opt/nancy \
         https://github.com/sonatype-nexus-community/nancy/releases/download/0.0.4/nancy-linux.amd64-0.0.4
 
 COPY entrypoint.sh /entrypoint.sh
