@@ -15,7 +15,7 @@
 # limitations under the License.
 
 tree /opt
-cd opt
+cd /opt
 ls -al
 
 /opt/nancy $GITHUB_WORKSPACE/$1
