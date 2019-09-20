@@ -17,5 +17,7 @@
 tree /opt
 cd /opt
 ls -al
+chmod +x nancy
+which nancy
 ./nancy
 echo $GITHUB_WORKSPACE/$1
