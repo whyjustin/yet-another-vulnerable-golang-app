@@ -19,7 +19,7 @@ LABEL com.github.actions.name="Nancy for GitHub Actions" \
 
 RUN apk add curl && \
     mkdir -p /github/home && \
-    curl -L -O /github/home/nancy \
+    curl -L -o /github/home/nancy \
         https://github.com/sonatype-nexus-community/nancy/releases/download/0.0.4/nancy-linux.amd64-0.0.4
 
 COPY entrypoint.sh /entrypoint.sh
