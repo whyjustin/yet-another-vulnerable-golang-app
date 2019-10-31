@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Nancy
-      uses: whyjustin/nancy-github-action@master
+      uses: sonatype-nexus-community/nancy-github-action@Update_Nancy_To_0.0.33
       with:
         target: go.sum
